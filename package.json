@@ -7,7 +7,8 @@
     "test": "mocha",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "migrate": "postgrator --config postgrator-config.js"
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate"
   },
   "keywords": [],
   "author": "",
