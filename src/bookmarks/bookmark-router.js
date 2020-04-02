@@ -1,10 +1,11 @@
 const express = require('express');
 const bookmarkRouter = express.Router();
-const store = require('./store');
+const store = require('../store');
 const bodyParser = express.json();
-const logger = require('./logger');
+const logger = require('../logger');
 const uuid = require('uuid/v4');
 const validUrl = require('valid-url');
+const bookmarksService = require('./bookmarks-service')
 
 bookmarkRouter
   .route('/bookmarks')

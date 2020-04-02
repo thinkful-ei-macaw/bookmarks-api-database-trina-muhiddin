@@ -1,5 +1,5 @@
 require('dotenv').config();
-const bookmarkRouter = require('./bookmark-router.js');
+const bookmarkRouter = require('./bookmarks/bookmark-router.js');
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
